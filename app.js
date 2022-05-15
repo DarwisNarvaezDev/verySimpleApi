@@ -13,7 +13,12 @@ app.get('/', async(req, res) => {
     res.status(200).json(saludo);
 })
 
-// app.post();
+app.post('/saludame/:nombre', async (req, res) => {
+    const { nombre } = req.params
+    const { mensaje } = req.body
+    res.status(200).json(`Hola, ${nombre}, este es el mensaje: ${mensaje}`)
+});
+
 // app.put();
 // app.delete();
 
