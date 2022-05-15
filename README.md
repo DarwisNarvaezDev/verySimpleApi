@@ -4,4 +4,8 @@
 2. npm install
 3. node app.js
 
-The only endpoint: (GET) ':8080/'
+Runs at localhost:8080
+Endpoints:
+
+GET '/' - simple 'hola mundo'
+POST '/saludame/{nombre}', body (JSON): { mensaje: "your message" } - Greeting by name and custom menssage
